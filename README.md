@@ -23,10 +23,10 @@ Simulación de tienda de Amiibos de Nintendo con carro de compras
         yarn android
              
 ## Extras
-- __Control de Errores__
-    **[Se incluye flag para simular un pago fallido. Para esto se debe dejar ERROR_FLAG en true en src/constants/config. También por ejemplo si se fuerza un error 404 cambiando el BASE_URL de la api de Amiibo, se puede generar un error en la carga de productos. ]**.
-- __Test unitarios__
-        **[Se incluyen algunos test unitarios de componentes, containers, API y Redux]**.
+- __Control de Errores:__
+    **Se incluye flag para simular un pago fallido. Para esto se debe dejar ERROR_FLAG en true en src/constants/config. También por ejemplo si se fuerza un error 404 cambiando el BASE_URL de la api de Amiibo, se puede generar un error en la carga de productos. **.
+- __Test unitarios:__
+        **Se incluyen algunos test unitarios de componentes, containers, API y Redux**.
 
-- __Pantallas de éxito y error__
-        **[Se incluyen pantallas dummy de éxito y error al pagar productos del carro, así como error en la carga de productos.]**.
+- __Pantallas de éxito y error:__
+        **Se incluyen pantallas dummy de éxito y error al pagar productos del carro, así como error en la carga de productos.**.
