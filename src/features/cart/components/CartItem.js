@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image} from 'native-base';
 import {colors} from '../../../utils/cartUtils';
-import ItemControls from '../../../components/ItemControls';
+import ProductQuantityControls from '../../../components/ProductQuantityControls';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import PropTypes from 'prop-types';
 
@@ -64,7 +64,7 @@ const CartItem = ({
               mr={3}
             />
           </TouchableOpacity>
-          <ItemControls
+          <ProductQuantityControls
             cart={cart}
             tail={item.tail}
             dispatch={dispatch}

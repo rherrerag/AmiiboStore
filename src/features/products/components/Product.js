@@ -6,7 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 import moment from 'moment';
 import 'moment/locale/es';
 import {colors} from '../../../utils/cartUtils';
-import ItemControls from '../../../components/ItemControls';
+import ProductQuantityControls from '../../../components/ProductQuantityControls';
 
 moment.locale('es');
 
@@ -63,7 +63,7 @@ const Product = ({data}) => {
         <Text textAlign="center" bold color={colors.nintendo3} mb={2}>
           ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}
         </Text>
-        <ItemControls cart={cart} tail={tail} dispatch={dispatch} />
+        <ProductQuantityControls cart={cart} tail={tail} dispatch={dispatch} />
       </Box>
     </TouchableOpacity>
   );

@@ -5,7 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import {addToCart, colors, removeFromCart} from '../utils/cartUtils';
 import {useNavigation} from '@react-navigation/native';
 
-const ItemControls = ({cart, tail, dispatch, contentStyle, buttonSize}) => {
+const ProductQuantityControls = ({cart, tail, dispatch, contentStyle, buttonSize}) => {
   const [quantityInCart, setQuantityInCart] = useState(0);
   const navigation = useNavigation();
 
@@ -66,4 +66,4 @@ const ItemControls = ({cart, tail, dispatch, contentStyle, buttonSize}) => {
   );
 };
 
-export default ItemControls;
+export default ProductQuantityControls;

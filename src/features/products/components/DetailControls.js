@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'native-base';
-import ItemControls from '../../../components/ItemControls';
+import ProductQuantityControls from '../../../components/ProductQuantityControls';
 import PropTypes from 'prop-types';
 
 const propTypes = {
@@ -17,7 +17,7 @@ const DetailControls = ({cart, tail, dispatch}) => {
         flexDirection: 'row',
         flexGrow: 1,
       }}>
-      <ItemControls
+      <ProductQuantityControls
         cart={cart}
         tail={tail}
         dispatch={dispatch}
