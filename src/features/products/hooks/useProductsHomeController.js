@@ -5,7 +5,7 @@ import {Animated} from 'react-native';
 import {getProductsThunk} from '../actions/products';
 
 const useProductsHomeController = () => {
-  const [itemsArray, setIitemsArray] = useState([]);
+  const [itemsArray, setItemsArray] = useState([]);
   const {products} = useSelector(state => state.products);
   const {isLoadingProducts} = useSelector(state => state.products);
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const useProductsHomeController = () => {
   }, []);
 
   useEffect(() => {
-    setIitemsArray(products);
+    setItemsArray(products);
   }, [products]);
 
   let opacity = new Animated.Value(0);
