@@ -2,8 +2,9 @@ import React, {memo} from 'react';
 import {ScrollView} from 'react-native';
 import {connect} from 'react-redux';
 import {Box, Container, View, Center} from 'native-base';
-import {SafeAreaView, StatusBar} from 'react-native';
+import {SafeAreaView} from 'react-native';
 import NavBar from '../../../components/NavBar';
+import StoreStatusBar from '../../../components/StoreStatusBar';
 import {colors} from '../../../utils/cartUtils';
 import labels from '../../../constants/labels';
 import useProductDetailController from '../hooks/useProductDetailController';
@@ -48,10 +49,7 @@ const ProductDetail = ({navigation, route: {params}}) => {
             maxWidth: '100%',
             minHeight: '100%',
           }}>
-          <StatusBar
-            barStyle="light-content"
-            backgroundColor={colors.nintendo1}
-          />
+          <StoreStatusBar />
           <View
             style={{
               minWidth: '100%',

@@ -1,8 +1,9 @@
 import React, {memo} from 'react';
 import {connect} from 'react-redux';
 import {SafeAreaView, ScrollView} from 'react-native';
-import {Container, StatusBar} from 'native-base';
+import {Container} from 'native-base';
 import NavBar from '../../../components/NavBar';
+import StoreStatusBar from '../../../components/StoreStatusBar';
 import {colors} from '../../../utils/cartUtils';
 import labels from '../../../constants/labels';
 import useCartController from '../hooks/useCartController';
@@ -89,10 +90,7 @@ const Cart = () => {
             flexDirection: 'column',
             paddingBottom: '30%',
           }}>
-          <StatusBar
-            barStyle="light-content"
-            backgroundColor={colors.nintendo1}
-          />
+          <StoreStatusBar />
           {renderShoppingCart()}
         </Container>
       </ScrollView>

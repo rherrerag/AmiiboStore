@@ -6,7 +6,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import {useNavigation} from '@react-navigation/native';
 import {colors} from '../utils/cartUtils';
 
-const NavBar = ({title, withSearch}) => {
+const NavBar = ({title, hideBackButton}) => {
   const navigation = useNavigation();
   const {cart} = useSelector(state => state.cart);
   const [shoppingCartItems, setShoppingCartItems] = useState(cart.length);
@@ -16,7 +16,7 @@ const NavBar = ({title, withSearch}) => {
   }, [cart]);
 
   const renderLeft = () =>
-    withSearch ? null : (
+    hideBackButton ? null : (
       <TouchableOpacity activeOpacity={0.8} onPress={() => navigation.goBack()}>
         <MaterialCommunityIcons name="chevron-left" size={28} color="white" />
       </TouchableOpacity>
